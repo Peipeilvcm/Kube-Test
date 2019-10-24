@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { createBrowserHistory, createHashHistory } from 'history';
-import { Route } from 'react-router';
+// import { Route } from 'react-router';
+import { HashRoute } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import { createRoutes } from 'routes';
@@ -11,7 +12,7 @@ import 'antd/dist/antd.css';
 import 'App.css';
 
 
-export const history = createBrowserHistory();
+export const history = createHashHistory();
 export const store = configureStore(history, {});
 const routes = createRoutes(store);
 
@@ -22,7 +23,7 @@ class App extends Component {
         <ConnectedRouter history={history}>
           <div className="app-container">
             {routes.map(r => 
-              <Route key={r.path} {...r} />
+              <HashRoute key={r.path} {...r} />
             )}
           </div>
         </ConnectedRouter>
