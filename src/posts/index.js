@@ -1,6 +1,8 @@
 import { sortBy } from 'lodash';
 import axios from 'axios';
 
+axios.defaults.baseURL='%PUBLIC_URL%';
+
 let postInfo = {};
 export const getPostInfo = async () => {
   if (!postInfo.data) {
