@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import createHistory from 'history/createBrowserHistory';
+import { createBrowserHistory, createHashHistory } from 'history';
 import { Route } from 'react-router';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
@@ -11,7 +11,7 @@ import 'antd/dist/antd.css';
 import 'App.css';
 
 
-export const history = createHistory();
+export const history = createHashHistory();
 export const store = configureStore(history, {});
 const routes = createRoutes(store);
 
