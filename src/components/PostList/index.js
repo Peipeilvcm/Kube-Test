@@ -61,13 +61,13 @@ export class PostList extends Component {
             </article>
           }
           stats={p.time}
-          content={
-            <Link to={p.url}>
-              <h3 className="post-title" title={p.title}>
-                {p.title}
-              </h3>
-            </Link>
-          }
+          // content={
+          //   <Link to={p.url}>
+          //     <h3 className="post-title" title={p.title}>
+          //       {p.title}
+          //     </h3>
+          //   </Link>
+          // }
         />
       </Col>
       // <article className="post-item" key={`post-${p.time}-${p.title}`}>
