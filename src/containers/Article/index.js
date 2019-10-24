@@ -54,7 +54,7 @@ export class Article extends Component {
       },
       {
         linkTo: '/',
-        tag: `CI Report List（${postCount}）`,
+        tag: `All Build History（${postCount}）`,
       },
       ...tagInfo,
     ];

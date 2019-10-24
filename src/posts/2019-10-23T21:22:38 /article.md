@@ -1,10 +1,9 @@
-===
+=== 
 
-标题: CI-2017-02-12T01:42:00
-标签: pod-delete
+标题： [Kube Test Action]2019-10-23T21:22:38 
+标签： network-delay, pod-delete
 
-===
-
+=== 
 # Summary report 
 | Task status | number |
 | ------------ | ------------ |

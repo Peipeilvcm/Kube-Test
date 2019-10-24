@@ -54,7 +54,7 @@ export class Home extends Component {
       },
       {
         linkTo: '/',
-        tag: `CI Report List（${postCount}）`,
+        tag: `All Build History（${postCount}）`,
       },
       ...tagInfo,
     ];
@@ -72,7 +72,7 @@ export class Home extends Component {
       <div className="page-container">
         <SideBar data={siteConfig} />
         <div className="post-list">
-          <Header data={navList} activeTag={`CI Report List（${postCount}）`} />
+          <Header data={navList} activeTag={`All Build History（${postCount}）`} />
           <div className="content">
             <Grid fluid>
               <Row>

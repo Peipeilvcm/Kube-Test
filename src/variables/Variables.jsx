@@ -493,8 +493,8 @@ const iconsArray = [
 //
 // Data for Pie Chart
 var dataPie = {
-  labels: ["80%", "20%"],
-  series: [80, 20]
+  labels: ["57.5%", "425%"],
+  series: [57.5, 42.5]
 };
 var legendPie = {
   names: ["Successes", "Errors"],
@@ -504,28 +504,28 @@ var legendPie = {
 // Data for Line Chart
 var dataSales = {
   labels: [
-    "9:00AM",
-    "12:00AM",
-    "3:00PM",
-    "6:00PM",
-    "9:00PM",
-    "12:00PM",
-    "3:00AM",
-    "6:00AM"
+    "Last 8",
+    "Last 7",
+    "Last 6",
+    "Last 5",
+    "Last 4",
+    "Last 3",
+    "Last 2",
+    "Latest"
   ],
   series: [
-    [287, 385, 490, 492, 554, 586, 698, 695],
-    [67, 152, 143, 240, 287, 335, 435, 437],
-    [23, 113, 67, 108, 190, 239, 307, 308]
+    // [287, 385, 490, 492, 554, 586, 698, 695],
+    // [67, 152, 143, 240, 287, 335, 435, 437],
+    [20, 20, 40, 40, 60, 80, 100, 100]
   ]
 };
 var optionsSales = {
   low: 0,
-  high: 800,
+  high: 100,
   showArea: false,
   height: "245px",
   axisX: {
-    showGrid: false
+    showGrid: true
   },
   lineSmooth: true,
   showLine: true,
@@ -548,8 +548,10 @@ var responsiveSales = [
   ]
 ];
 var legendSales = {
-  names: ["Open", "Click", "Click Second Time"],
-  types: ["info", "danger", "warning"]
+  names: ["Pass Rate"],
+  types: ["info"]
+  // names: ["Open", "Click", "Click Second Time"],
+  // types: ["info", "danger", "warning"]
 };
 
 // Data for Bar Chart

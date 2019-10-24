@@ -1,10 +1,9 @@
-===
-
-标题： [Kube Test Action]2019-10-23-20:22:23
-标签： 2019-10-23-20:22:23
-
 === 
 
+标题： [Kube Test Action]2019-10-23T22:24:28
+标签： recover, pod-delete
+
+=== 
 # Summary report 
 | Task status | number |
 | ------------ | ------------ |

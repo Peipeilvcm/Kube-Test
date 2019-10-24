@@ -28,12 +28,12 @@ export class PostList extends Component {
     goHome: false,
   };
 
-  _loadThumb = (thumb, i) => {
-    if (!thumb.length) {
-      return defaultThumbs[i % defaultThumbs.length];
-    }
-    return thumb;
-  };
+  // _loadThumb = (thumb, i) => {
+  //   if (!thumb.length) {
+  //     return defaultThumbs[i % defaultThumbs.length];
+  //   }
+  //   return thumb;
+  // };
 
   render() {
     let postItems = this.props.data.map((p, i) =>
@@ -57,16 +57,12 @@ export class PostList extends Component {
                   </p>
                 </Link>
               )}
-              </div> 
+              </div>
             </article>
           }
           stats={p.time}
           // content={
-          //   <Link to={p.url}>
-          //     <h3 className="post-title" title={p.title}>
-          //       {p.title}
-          //     </h3>
-          //   </Link>
+            
           // }
         />
       </Col>
@@ -100,7 +96,7 @@ export class PostList extends Component {
       <section id="posts">
         {goHome}
         <div className="row">
-          {postItems.length ? postItems : <h2>正在获取文章列表...</h2>}
+          {postItems.length ? postItems : <h2>loading history...</h2>}
         </div>
       </section>
     );

@@ -1,13 +1,13 @@
 {
   "avatar": "./avatar.jpeg",
-  "title": "Kube Test Actions",
-  "subTitle": "CI Dashboard",
-  "intro": "CI Report List",
+  "title": "Kube-Test",
+  "subTitle": "Dashboard",
+  "intro": "Build History",
   "social": [
     {
-      "text": "Sensetime",
+      "text": "SenseTime",
       "link": "https://www.sensetime.com"
     }
   ],
-  "copyright": "© Sensetime | 2019 Kube Test Actions"
+  "copyright": "© SenseTime | 2019 Kube Test Actions"
 }

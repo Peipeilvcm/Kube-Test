@@ -60,7 +60,7 @@ export default class Dashboard extends Component {
       },
       {
         linkTo: '/',
-        tag: `CI Report List（12）`,
+        tag: `All Build History（12）`,
       },
       {"tag":"app-pod-failure","count":1},{"tag":"network-delay","count":1},{"tag":"pod-delete","count":1},
     ];
@@ -73,7 +73,10 @@ export default class Dashboard extends Component {
         <Header data={navList} activeTag={`Dashboard`} />
 
         <section id="posts">
-          <GoBack />
+          <div className="content">
+            <GoBack />
+          </div>
+          
           <div className="content">
             <Grid fluid>
               <Row>
@@ -81,7 +84,7 @@ export default class Dashboard extends Component {
                   <StatsCard
                     bigIcon={<i className="pe-7s-server text-warning" />}
                     statsText="CI count"
-                    statsValue="10 times"
+                    statsValue="8 times"
                     statsIcon={<i className="fa fa-refresh" />}
                     statsIconText="Updated now"
                   />
@@ -90,7 +93,7 @@ export default class Dashboard extends Component {
                   <StatsCard
                     bigIcon={<i className="pe-7s-wallet text-success" />}
                     statsText="Successes"
-                    statsValue="8 times"
+                    statsValue="23 cases"
                     statsIcon={<i className="fa fa-calendar-o" />}
                     statsIconText="Last day"
                   />
@@ -99,16 +102,16 @@ export default class Dashboard extends Component {
                   <StatsCard
                     bigIcon={<i className="pe-7s-graph1 text-danger" />}
                     statsText="Errors"
-                    statsValue="2 times"
+                    statsValue="17 cases"
                     statsIcon={<i className="fa fa-clock-o" />}
                     statsIconText="In the last hour"
                   />
                 </Col>
                 <Col lg={3} sm={6}>
                   <StatsCard
-                    bigIcon={<i className="fa fa-twitter text-info" />}
-                    statsText="Total time cost"
-                    statsValue="21.2 mins"
+                    bigIcon={<i className="fa fa-clock-o text-info" />}
+                    statsText="Time cost"
+                    statsValue="19.2 mins"
                     statsIcon={<i className="fa fa-refresh" />}
                     statsIconText="Updated now"
                   />
@@ -119,8 +122,8 @@ export default class Dashboard extends Component {
                   <Card
                     statsIcon="fa fa-history"
                     id="chartHours"
-                    title="CI History"
-                    category="10 recent results"
+                    title="CI Building History"
+                    category="8 recent results"
                     stats="Updated 3 minutes ago"
                     content={
                       <div className="ct-chart">
@@ -140,9 +143,9 @@ export default class Dashboard extends Component {
                 <Col md={4}>
                   <Card
                     statsIcon="fa fa-clock-o"
-                    title="CI Report Statistics"
-                    category="Total Results"
-                    stats="Campaign sent 2 days ago"
+                    title="Statistics"
+                    category="Total Case Results"
+                    stats="Updated 3 minutes ago"
                     content={
                       <div
                         id="chartPreferences"

@@ -1,11 +1,9 @@
-===
+=== 
 
-标题: CI-2016-10-21T04:48:00
-标签: app-pod-failure, network-delay
+标题： [Kube Test Action]2019-10-24T10:20:23
+标签： ful-cpu
 
-===
-
-
+=== 
 # Summary report 
 | Task status | number |
 | ------------ | ------------ |
