@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { createBrowserHistory, createHashHistory } from 'history';
 import { Route } from 'react-router';
-// import { HashRoute } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { ConnectedHashRouter } from 'react-router-redux';
 import { createRoutes } from 'routes';
