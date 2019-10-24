@@ -11,7 +11,7 @@ import 'antd/dist/antd.css';
 import 'App.css';
 
 
-export const history = createHashHistory();
+export const history = createBrowserHistory();
 export const store = configureStore(history, {});
 const routes = createRoutes(store);
 
