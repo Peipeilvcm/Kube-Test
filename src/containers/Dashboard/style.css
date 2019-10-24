@@ -1,0 +1,15 @@
+.page-container .post-list {
+  min-height: 300px;
+  width: var(--content-width);
+  margin-left: var(--side-bar-width);
+  padding-bottom: 6em;
+}
+
+.post-list .load-more {
+  margin: 0 4em;
+}
+
+#posts {
+  padding: 6em 4em 2em 4em;
+  overflow: hidden;
+}
