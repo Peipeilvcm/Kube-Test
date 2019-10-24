@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { createBrowserHistory, createHashHistory } from 'history';
-// import { Route } from 'react-router';
-import { HashRoute } from 'react-router-dom';
+import { Route } from 'react-router';
+// import { HashRoute } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'react-router-redux';
+import { ConnectedHashRouter } from 'react-router-redux';
 import { createRoutes } from 'routes';
 import configureStore from 'store';
 import 'normalize.css';
@@ -20,13 +20,13 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <ConnectedRouter history={history}>
+        <HashRouter history={history}>
           <div className="app-container">
             {routes.map(r => 
-              <HashRoute key={r.path} {...r} />
+              <Route key={r.path} {...r} />
             )}
           </div>
-        </ConnectedRouter>
+        </HashRouter>
       </Provider>
     );
   }
