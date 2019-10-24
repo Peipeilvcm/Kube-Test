@@ -43,14 +43,14 @@
     "typescript": "3.4.3",
     "inquirer": "^5.0.1",
     "fs-extra": "^5.0.0",
-    "react-app-rewired": "^1.4.0"
+    "react-app-rewired": "^1.6.2"
   },
   "scripts": {
     "compile": "node compile.js",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-app-rewired eject",
+    "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "node-sass src/assets/sass/light-bootstrap-dashboard-react.scss src/assets/css/light-bootstrap-dashboard-react.css",
     "minify-sass": "node-sass src/assets/sass/light-bootstrap-dashboard-react.scss src/assets/css/light-bootstrap-dashboard-react.min.css --output-style compressed",
